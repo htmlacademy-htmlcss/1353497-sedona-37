@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
 
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -11,19 +11,64 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #FFFFFF;
+  }
+
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  height: 100%;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  margin-left: 28px;
+}
+
+.navigation-list {
+  flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 339px;
+}
+
+.navigation-user {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 268px;
+  margin-left: auto;
 }
 
 .navigation-link {
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -31,10 +76,49 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   text-decoration: none;
-
+  padding: 20px 16px;
   }
 
+  .navigation-user .navigation-link {
+    min-width: 44px;
+    min-height: 64px;
+  }
+
+  .hero {
+min-height: 485px;
+  }
+
+
+.causes-title {
+  min-height: 261px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  /*padding: 69px 0;*/
+}
+
+.title-services {
+  min-height: 246px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+
+}
+
+.hero-welcome {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
+}
+
+.advantages-background {
+  display: block;
+}
+
 .main-index {
+  width: 1200px;
+  margin: 0 auto;
   background-image: url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -44,16 +128,20 @@ body {
 
 .advantages {
   text-align: center;
-}
+  }
 
-.advantages-title {
-  font-family: "PT Sans", sans-serif;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 28px;
-}
+  .advantages-list {
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  }
 
 .page-header{
+  display: flex;
+  width: 1200px;
+  min-height: 69px;
   color: #000000;
   background-color: #FFFFFF;
 }
@@ -66,6 +154,7 @@ body {
 }
 
 .button {
+  font-family: 'PT Sans';
   text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
@@ -73,7 +162,9 @@ body {
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
-  background-color: #756157;
+  padding: 8px 50px;
+  min-width: 160px;
+  box-sizing: border-box;
 }
 
 
@@ -86,6 +177,11 @@ body {
 .button-brown {
   background: #756157;
   color: #FFFFFF;
+}
+
+.transparent {
+background:none;
+
 }
 
 .blue {
@@ -107,14 +203,27 @@ body {
 
 
 
-.advantages-title {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
+
+
+.advantages-item {
+  height: 385px;
+  width: 400px;
 }
 
-.advantages-item-inverted {
+.services-list {
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item {
+  height: 385px;
+  width: 400px;
+}
+
+.inverted {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
@@ -123,7 +232,11 @@ body {
   text-align: center;
   }
 
+  /* Стили заголовков */
 .title {
+  margin: 0;
+  margin-top: 69px;
+  margin-bottom: 25px;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
@@ -131,16 +244,79 @@ body {
   text-align: center;
 }
 
-.light{
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-.services-title {
+.advantages-title {
+  margin: 0 auto;
+  width: 175px;
+  margin-top: 112px; /* Разное значние */
+  margin-bottom: 62px;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+}
+
+.services-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.search-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.light {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Стили абазацев */
+.description {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscription-description{
+  margin: 0;
+  margin-bottom: 54px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.advantages-description {
+  margin: 0 auto;
+  width: 230px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.services-description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+}
+.search-description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 54px;
+}
+
+.services-icon {
+  margin-top: 81px;
+  margin-bottom: 30px;
 }
 
 .light-background {
@@ -151,33 +327,199 @@ body {
   background: #83B3D333;
 }
 
-.subscription {
+.subscription-background {
+  padding-top: 96px;
+  padding-bottom: 104px;
+  min-height: 415px;
   background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
+  text-align: center;
 }
 
 .hotel-search {
   text-align: center;
+  min-height: 406px;
+  padding: 96px 0;
 }
 
-.subscription {
-  text-align: center;
+.product-card-title {
+text-decoration: none;
+color: #000000;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  padding: 12px 24px;
+  width: 60px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Футер */
+.page-footer {
+display: flex;
+justify-content: space-around;
+padding-bottom: 35px;
+}
+
+.social-list {
+display: flex;
+flex-wrap: wrap;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.social-list-item {
+  width: 47px;
+  height: 40px;
 }
 
 .phone {
+  display: block;
   text-decoration: none;
+  color: #000000;
+  background-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.logo {
+  display: block;
+  margin-left: 70px;
+}
+
+/* Каталог */
+.main-inner {
+  width: 1200px;
+  margin: 0 auto;
   color: #000000;
   background-color: #FFFFFF;
 }
 
 .hotels {
+  display: flex;
+  width: 1200px;
+  min-height: 412px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
   background-image: url(../images/filter-background.jpg);
   background-size: 100% auto;
 }
 
+.title-hotels {
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
 
-.product-card-title {
-  text-decoration: none;
+.infrastructure {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotels-filter {
+  width: 1060px;
+  height: 107px;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 49px;
+  margin-bottom: 46px;
+}
+
+.view {
+  display: flex;
+}
+
+.view .button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.view .button:not(:last-child){
+  margin-right: 8px;
+}
+
+.breadcrumbs {
+  list-style: none;
+  display: block;
+  margin-bottom: 40px;
+}
+
+
+.select-control {
+font-family: 'PT Sans';
+font-size: 18px;
+line-height: 21px;
+}
+
+.cards {
+display: flex;
+margin: 0;
+padding: 0;
+margin-bottom: 80px;
+list-style: none;
+margin: 0 auto;
+flex-wrap: wrap;
+width: 1060px;
+}
+
+.card {
+width: 340px;
+height: 438px;
+list-style: none;
+}
+
+.pagination {
+display: flex;
+margin: 0;
+padding: 0;
+margin-bottom: 60px;
+list-style: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.subscription {
   color: #000000;
+  padding-top: 96px;
+  padding-bottom: 104px;
+  min-height: 415px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-align: center;
 }
