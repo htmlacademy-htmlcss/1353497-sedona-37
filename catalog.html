@@ -109,7 +109,8 @@
                       <legend class="catalog-filter-title">Стоимость, ₽</legend>
                       <div class="input-wrapper">
                         <label class="control">От
-                          <input class="control-input" type="text" name="control-group" value="0" >
+                          <input class="control-input" placeholder="от" type="text" name="control-group" value="0" >
+                        <!-- <input class="field-email" type="field-email" name="subscription-mailto" placeholder="Ваш e-mail"> -->
                         </label>
                         <label class="control">До
                           <input class="control-input" type="text" name="control-group" value="9000" >
@@ -150,25 +151,26 @@
             </section>
             <ul class="cards">
               <li class="card">
-                  <a class="product-card-link" href="#">
+                <a class="product-card-link" href="#">
                   <img class="product-card-img" src="images/catalog-hotel-1.jpg" width="300" height="212" alt="Ущелье с видом на ночное звездное небо">
-                  <h3 class="product-card-title">Amara Resort & Spa</h3>
                 </a>
-                <div class="price">
-                  <p class="card-price-name">Гостиница</p>
-                  <span class="card-price-value">От 4000 ₽</span>
+                <div class="card-wrapper">
+                  <h3 class="product-card-title">Amara Resort & Spa</h3>
+                  <div class="price">
+                    <p class="card-price-name">Гостиница</p>
+                    <span class="card-price-value">От 4000 ₽</span>
+                  </div>
+                  <div class="buttons-block">
+                    <a class="button details" href="#">подробнее</a>
+                    <button class="button add" type="submit">в избранное</button>
+                  </div>
+                  <div class="rating-star">
+                    <p class="rating" type="submit">Рейтинг: 8,5</p>
+                    <p class="stars-star-4"></p>
+                    <span class="visually-hidden">4 звезды</span>
+                   </div>
                 </div>
-                <div class="buttons-block">
-                  <a class="button details" href="#">подробнее</a>
-                  <button class="button add" type="submit">в избранное</button>
-                </div>
-                <div class="rating-star">
-                  <p class="rating" type="submit">Рейтинг:8,5</p>
-                  <p class="stars-star-4"></p>
-                  <span class="visually-hidden">4 звезды</span>
-                 </div>
               </li>
-
               <li class="card">
                 <a class="product-card-link" href="#">
                 <img class="product-card-img" src="images/catalog-hotel-2.jpg" width="300" height="212" alt="Вид гор на фоне облаков и радуги">
@@ -183,7 +185,7 @@
                   <button class="button added" type="submit">в избранном</button>
                 </div>
                 <div class="rating-star">
-                  <p class="rating" type="submit">Рейтинг:9,2</p>
+                  <p class="rating" type="submit">Рейтинг: 9,2</p>
                   <p class="stars-star-4"></p>
                   <span class="visually-hidden">4 звезды</span>
                 </div>
@@ -203,7 +205,7 @@
                 <button class="button add" type="submit">в избранное</button>
             </div>
             <div class="rating-star">
-                <p class="rating" type="submit">Рейтинг:6,9</p>
+                <p class="rating" type="submit">Рейтинг: 6,9</p>
                 <p class="stars-star-3"></p>
                 <span class="visually-hidden">3 звезды</span>
             </div>
@@ -229,11 +231,11 @@
         </li>
             </ul>
                <ul class="pagination">
-                <li class="pagination-item">
+                <!-- <li class="pagination-item">
                   <a class="pagination-link pagination-prev pagination-disabled">
                     <span class="visually-hidden">Предыдущая страница</span>
                   </a>
-                </li>
+                </li> -->
                 <li class="pagination-item">
                   <a class="pagination-link pagination-current">1</a>
                 </li>
@@ -247,21 +249,18 @@
                   <a class="pagination-link" href="#">4</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">...</a>
+                  <a class="pagination-link pagination-points" href="#">...</a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">10</a>
                 </li>
-                <li class="pagination-item">
+                <!-- <li class="pagination-item">
                   <a class="pagination-link pagination-next" href="#">
                     <span class="visually-hidden">Следующая страница</span>
                   </a>
-                </li>
+                </li> -->
               </ul>
           </div>
-
-
-
           <section class="subscription">
             <h2 class="title">Подпишитесь на рассылку</h2>
             <p class="search-description">
@@ -272,10 +271,6 @@
                 <button class="subscription-button" type="submit">ПОДПИСАТЬСЯ</button>
             </form>
           </section>
-
-
-
-
       </main>
       <footer class="page-footer">
         <ul class="social-list">
