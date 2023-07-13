@@ -35,6 +35,7 @@
                 <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="currentColor" viewBox="0 0 18 17">
                   <path d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
                 <span class="visually-hidden" aria-hidden="true">Добавить в избранное</span>
+                <span class="favourites">12</span>
               </a>
             </li>
             <li class="navigation-item">
@@ -59,7 +60,7 @@
             </ol>
           </div>
                 <h2 class="visually-hidden" aria-hidden="true">Список товаров с фильтрами</h2>
-                <form class="catalog-filter" action="#" method="get">
+                <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                   <div class="filter-item">
                     <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -139,15 +140,17 @@
                       </div>
                     </fieldset>
                     <div class="button-wrapper">
-                      <button class="button аccept" type="submit">применить</button>
-                      <button class="button reset" type="reset">сбросить</button>
+                      <button class="button аccept" type="button">применить</button>
+                      <button class="button reset" type="button">сбросить</button>
                     </div>
                   </div>
                 </form>
           </section>
           <div class="catalog-page">
             <section class="catalog">
-              <h2 class="title">Найдено гостиниц: 38</h2>
+              <h2 class="title-search">Найдено гостиниц:
+                <span>38</span>
+              </h2>
               <div class= "select sorting-type">
                 <select class="select-control" aria-label="Сортировка">
                   <option value="cheap">Сначала дешевые</option>
@@ -156,21 +159,27 @@
                 </select>
               </div>
               <ul class="view">
-                <li>
+                <li class="view-item">
                   <a class="button-view view-active" href="#">
-                    <img src="images/view-tile.svg" width="16" height="14" alt="Плитка">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="currentColor" viewBox="0 0 16 14">
+                      <path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
+                    </svg>
                     <span class="visually-hidden">Вид галереи плиткой</span>
                   </a>
                 </li>
-                <li>
+                <li class="view-item">
                   <a class="button-view" href="#">
-                    <img src="images/view-screen.svg" width="16" height="14" alt="На ширину окна">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="currentColor" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)">
+                      <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
+                    </svg>
                     <span class="visually-hidden">Вид галереи на ширину окна</span>
                   </a>
                 </li>
-                <li>
+                <li class="view-item">
                   <a class="button-view" href="#">
-                    <img src="images/view-list.svg" width="16" height="14" alt="Список">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="currentColor" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)">
+                      <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
+                    </svg>
                     <span class="visually-hidden">Вид галереи списоком</span>
                   </a>
                 </li>
@@ -185,9 +194,9 @@
                   <p class="card-price-name">Гостиница</p>
                   <span class="card-price-value">От 4000 ₽</span>
                   <a class="button details" href="#">подробнее</a>
-                  <button class="button add" type="submit">в избранное</button>
+                  <button class="button add" type="button">в избранное</button>
                   <p class="stars-star-4"></p>
-                  <p class="rating" type="submit">Рейтинг: 8,5</p>
+                  <p class="rating">Рейтинг: 8,5</p>
                   <span class="visually-hidden">4 звезды</span>
               </li>
               <li class="card">
@@ -198,9 +207,9 @@
                   <p class="card-price-name">Гостиница</p>
                   <span class="card-price-value">От 5000 ₽</span>
                   <a class="button details" href="#">подробнее</a>
-                  <button class="button added" type="submit">в избранном</button>
+                  <button class="button added" type="button">в избранном</button>
                   <p class="stars-star-4"></p>
-                  <p class="rating" type="submit">Рейтинг: 9,2</p>
+                  <p class="rating">Рейтинг: 9,2</p>
                   <span class="visually-hidden">4 звезды</span>
               </li>
               <li class="card">
@@ -211,9 +220,9 @@
                   <p class="card-price-name">Гостиница</p>
                   <span class="card-price-value">От 2500 ₽</span>
                   <a class="button details" href="#">подробнее</a>
-                  <button class="button add" type="submit">в избранное</button>
+                  <button class="button add" type="button">в избранное</button>
                   <p class="stars-star-3"></p>
-                  <p class="rating" type="submit">Рейтинг: 6,9</p>
+                  <p class="rating">Рейтинг: 6,9</p>
                   <span class="visually-hidden">3 звезды</span>
               </li>
                 <li class="card">
@@ -224,9 +233,9 @@
                     <p class="card-price-name">Гостиница</p>
                     <span class="card-price-value">От 1500 ₽</span>
                     <a class="button details" href="#">подробнее</a>
-                    <button class="button add" type="submit">в избранное</button>
+                    <button class="button add" type="button">в избранное</button>
                     <p class="stars-star-2"></p>
-                    <p class="rating" type="submit">Рейтинг: 5,0</p>
+                    <p class="rating">Рейтинг: 5,0</p>
                     <span class="visually-hidden">2 звезды</span>
               </li>
             </ul>
@@ -263,7 +272,7 @@
           </div>
           <section class="subscription">
             <h2 class="title">Подпишитесь на рассылку</h2>
-            <p class="search-description">
+            <p class="search-description-catalog">
               Только полезная информация и никакого спама,<br> честное бойскаутское!
             </p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">

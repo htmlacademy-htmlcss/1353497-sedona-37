@@ -53,7 +53,7 @@
         </section>
           <section class="advantages">
             <div class="causes-title">
-              <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+              <h2 class="title-advantages">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
               <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
             </div>
              <ul class="advantages-list">
@@ -201,63 +201,66 @@
         <section class="modal-content">
           <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
+            <span class="field-group">
               <label class="date-in" for="date-in">
                 <span class="label-text">Дата Заезда:</span>
                 <span class="date-icon"></span>
                 <input class="search-form-field field" type="text" id="date-in" name="date-in" value="27 апреля 2020">
-                <span class="field-info field-info-error" style="color: #FF5757;">Мы не можем отправить вас в прошлое.</span>
+                <span class="field-info error">Мы не можем отправить вас в прошлое.</span>
               </label>
-            </p>
-            <p class="field-group">
+            </span>
+            <span class="field-group">
               <label class="date-in" for="date-out">
                 <span class="label-text">Дата Выезда:</span>
                 <span class="date-icon"></span>
                 <input class="search-form-field field" type="text" id="date-out" name="date-out" value="1 сентября 2023">
                 <span class="field-info" >На эти даты есть свободные номера. Пока есть.</span>
               </label>
-            </p>
+            </span>
             <div class="people-count-wrapper">
-              <p class="field-group">
+              <span class="field-group">
                 <label class="adults-label" for="adults">Взрослые:</label>
-                </p><div class="field-people-wrapper">
+              </span>
+                <div class="field-people-wrapper">
                   <input class="search-form-field field-people" type="number" name="adults" id="adults" value="2">
-                  <button class="minus">
+                  <button  type="button" class="minus">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
-                  <button class="plus">
+                  <button type="button" class="plus">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
                 </div>
-              <p class="field-group">
-                <label class="children-label" for="children">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button">
-                    <svg class="tooltip-info" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"></path>
-                    </svg>
-                  </button>
-                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                <span class="field-group">
+                  <label class="children-label" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg class="tooltip-info" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"></path>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
                 </span>
-                </p><div class="field-people-wrapper">
+                <div class="field-people-wrapper">
                   <input class="search-form-field field-people" type="number" name="children" id="children" value="2">
-                  <button class="minus">
+                  <button type="button" class="minus">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
-                  <button class="plus">
+                  <button type="button" class="plus">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"></path>
                     </svg>
                   </button>
                 </div>
             </div>
-            <button class="button-modal-search">найти</button>
+            <button type="button" class="button-modal-search">найти</button>
           </form>
         </section>
       </div>
