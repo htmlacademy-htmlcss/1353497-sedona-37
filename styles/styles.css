@@ -170,7 +170,7 @@ body {
   url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center;
-  background-size: 100% auto;
+  background-size: contain, cover;
   min-height: 485px;
 }
 
