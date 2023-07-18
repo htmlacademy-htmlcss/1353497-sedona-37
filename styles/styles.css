@@ -165,11 +165,12 @@ body {
   width: 1200px;
   margin: 0 auto;
   background: linear-gradient(#808080, #82b3d3);
-  background-image: url("../images/hero-background.jpg");
+  background-image:
+  url("../images/divider.svg"),
+  url("../images/hero-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  color: #000000;
-  background-color: #ffffff;
+  background-position: center bottom, center;
+  background-size: contain, cover;
   min-height: 485px;
 }
 
@@ -1687,7 +1688,7 @@ body {
 
 .tooltip-text {
   position: relative;
-  display: block;
+  display: none;
   padding: 19px 18px 22px 22px;
   top: 17px;
   left: 32px;
@@ -1710,6 +1711,11 @@ body {
   width: 19px;
   height: 19px;
   background-color: #333333;
+}
+
+.tooltip-toggle:hover,
+.tooltip-toggle:focus {
+  background-color: #9bc2db;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
